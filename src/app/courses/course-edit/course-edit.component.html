@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12" *ngIf="course">
+      <h3>Course Details</h3>
+
+
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control"  [(ngModel)]="course.name" placeholder="Enter Name">
+      </div>
+      <div class="form-group">
+        <label for="duration">Duration</label>
+        <input type="text" class="form-control" id="duration" [(ngModel)]="course.duration" placeholder="Enter duration">
+      </div>
+      <div class="form-group">
+        <label for="fee">Fee</label>
+        <input class="form-control" id="fee" [(ngModel)]="course.fee" placeholder="Enter fee">
+      </div>
+      <div class="form-group">
+        <label for="startDate">StartDate</label>
+        <input type="text" class="form-control" id="startDate" [(ngModel)]="course.startDate" placeholder="Enter startDate">
+      </div>
+
+
+
+
+      <div style="margin-top:30px">
+
+        <button type="submit" class="btn btn-lg btn-success" (click)="save()">Save</button>
+
+        <button type="submit" style='margin-left:10px;' class="btn btn-lg btn-warning ml-1" (click)='goback()' >Back</button>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
